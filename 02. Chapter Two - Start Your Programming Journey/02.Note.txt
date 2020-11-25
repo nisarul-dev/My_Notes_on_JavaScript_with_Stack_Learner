@@ -1,0 +1,17 @@
+Chapter - 2
+==============
+## 6 ##
+
+Programming: Programming is a set of instruction which our computer can read, understand and produc and output.
+String: Anyting wrapped with quote is called String.
+
+
+             String        +     Number =    String   ( is a Concatination )
+               |           |        |
+console.log ( "I'm "       +        21 );
+               |           |        |
+           Operent     Operator    Operent
+
+
+## 7 ##
+
