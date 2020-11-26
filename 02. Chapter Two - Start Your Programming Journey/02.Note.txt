@@ -189,7 +189,7 @@ Post incremental: i++ ; code: var i = 0; connsole.log(i++); console.log(i); | ou
     || , && , !
 
 
-## 17 ## Math Functions
+## 18 ## Math Functions
 
 console.log( Math.E ); // 2.718281828459045
 console.log( Math.PI ); //3.141592653589793
@@ -209,7 +209,24 @@ console.log( Math.sqrt(9) ); // 3
 console.log( Math.round( Math.random() * 5 + 1 ) );
 
 
-## 18 ## Math Functions
+## 19 ## Date Functions
+
+var date = new Date();
+console.log( date ); // 2020-11-26T07:49:49.024Z
+
+// String Outputs
+console.log( date.toDateString() ); // Thu Nov 26 2020
+console.log( date.toTimeString() ); // 13:49:49 GMT+0600 (Bangladesh Standard Time)
+console.log( date.toLocaleString() ); // 11/26/2020, 1:49:49 PM
+
+// Number Outputs
+console.log( date.getFullYear() ); // 2020
+console.log( date.getMonth() ); // 10; Starts from 0
+console.log( date.getDate() ); // 26
+console.log( date.getMinutes() ); // 53
+console.log( date.getSeconds() ); // 30
+
+
 
 
 
