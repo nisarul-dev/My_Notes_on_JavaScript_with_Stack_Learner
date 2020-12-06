@@ -1,0 +1,196 @@
+Chapter - 5
+==============
+## 38 ## String Literal vs Constructor
+
+
+String Literal:
+var str = 'Something';
+
+Constructor:
+var str = String('Something');
+
+We can use constuctor to "TypeCast":
+> Code:
+var num = 120;
+console.log(typeOf num);
+var num = String(num); // here we could have used var num = num.toString();
+console.log(typeOf num);
+
+> Output:
+Number
+String
+
+
+
+## 39 ## Hello Word
+
+
+## 40 ## How to Compare Two String
+
+
+JavaScript Uses Lexiographic System to Compare to String.
+
+
+-------------------
+|| Lexical Order ||
+-------------------
+A,B,C,..,X, Y, Z, a, b, c,..,X, Y, Z
+1,2,3,..,24,25,26,27,28,29,..50,51,52
+
+
+
+
+
+## 10, 11, 12, 13, 14 ##
+
+****** Basic Constractiors ******
+------------
+|| String ||
+------------
+
+i. Using Constractor
+----------------------
+> Code:
+var num = 100;
+var isHungry = true;
+num = String(num);
+isHungry = String(isHungry); 
+console.log(typeof num);
+console.log(typeof isHungry);
+
+> Output:
+string
+string
+
+ii. Using .toString()
+----------------------
+> Code:
+var num = 100;
+var isHungry = true;
+num = num.toString();
+isHungry = isHungry.toString(); 
+console.log(typeof num);
+console.log(typeof isHungry);
+
+> Output:
+string
+string
+
+-------------
+|| Boolean ||
+-------------
+
+i. Using Constractor
+----------------------
+> Code:
+var num = 50;
+var emptyQuote = ""; 
+console.log(Boolean(num));
+console.log(Boolean(emptyQuote));
+
+> Output:
+true
+false
+
+ii. Using .toBoolean()
+----------------------
+There is no such .toBoolean()
+
+------------
+|| Number ||
+------------
+i. Using Constractor
+---------------------
+> Code:
+var money = '70';
+money = Number(money);
+console.log(typeof money);
+
+> Output:
+number
+
+****** null vs undefined ******
+
+
+****** Falsy Values in JavaScript ******
+   i. ''      // Empty String
+   ii. 0      // Number zero
+   iii. null
+   iv. undefined
+   v. NaN
+
+
+## 15 ## Octal and Hexadecimel Number System
+
+code ->
+var hex = 0xff;
+console.log(hex);
+var oct = 0756;
+console.log(oct);
+
+output ->
+255
+494
+
+
+## 16 ## Operator
+ 
+(i) Arithmetic Operator
++, - , *, / , % (Modouls>Reminder) , ++ (Incremental Opreator) , -- (Decremental Operator)
+
+Pre incremental: ++i; code: var i = 0; console.log(++i); | output: 1
+Post incremental: i++ ; code: var i = 0; connsole.log(i++); console.log(i); | output: 0 nextLine 1
+
+(ii) Assignmental Operator
+= , +=, -= , *=, /= , %=
+
+(iii) Comparison Operator  
+==, !=, < , > , <=. >=, === (Identical), !==
+
+(iv) Logical Operator
+    || , && , !
+
+
+## 18 ## Math Functions
+
+console.log( Math.E ); // 2.718281828459045
+console.log( Math.PI ); //3.141592653589793
+console.log( Math.sin(Math.PI / 2) ); // 1; Here PI/2 = 90deg as Pi=180deg
+
+var n = 4.389;
+console.log( Math.abs(n) ); // 4.389
+console.log( Math.floor(n) ); // 4
+console.log( Math.ceil(n) ); // 5
+console.log( Math.round(n) ); // 4
+console.log( Math.max(400, 500, 600) ); // 600
+console.log( Math.min(400, 500, 600) ); // 400
+console.log( Math.pow(2, 3) ); // 8
+console.log( Math.sqrt(9) ); // 3
+
+// Making a Ludu Cube with JavaScript
+console.log( Math.round( Math.random() * 5 + 1 ) );
+
+
+## 19 ## Date Functions
+
+var date = new Date();
+console.log( date ); // 2020-11-26T07:49:49.024Z
+
+// String Outputs
+console.log( date.toDateString() ); // Thu Nov 26 2020
+console.log( date.toTimeString() ); // 13:49:49 GMT+0600 (Bangladesh Standard Time)
+console.log( date.toLocaleString() ); // 11/26/2020, 1:49:49 PM
+
+// Number Outputs
+console.log( date.getFullYear() ); // 2020
+console.log( date.getMonth() ); // 10; Starts from 0
+console.log( date.getDate() ); // 26
+console.log( date.getMinutes() ); // 53
+console.log( date.getSeconds() ); // 30
+
+
+
+
+
+
+
