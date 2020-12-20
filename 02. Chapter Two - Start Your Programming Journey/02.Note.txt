@@ -147,7 +147,22 @@ console.log(typeof money);
 > Output:
 number
 
-****** null vs undefined ******
+****** undefined vs null ******
+Undefined: A variable without value always store undefined.
+
+Null: A varable with unknown value can store Null. Null is a special type used as a absence of an Object.
+
+
+code ->
+var abc;
+var xyz = null;
+console.log(abc);
+console.log(xyz);
+
+output ->
+undefined
+null
+
 
 
 ****** Falsy Values in JavaScript ******
@@ -161,9 +176,9 @@ number
 ## 15 ## Octal and Hexadecimel Number System
 
 code ->
-var hex = 0xff;
+var hex = 0xff;  // hexadecimel starts from 0x || structure = 0x + hex-number || Ex: 0xb decimel=> 11
 console.log(hex);
-var oct = 0756;
+var oct = 0756; // Octal starts by 0 || stucture = 0 + oct-number || Ex: 011 decimel=> 9
 console.log(oct);
 
 output ->

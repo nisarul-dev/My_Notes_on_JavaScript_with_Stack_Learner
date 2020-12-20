@@ -34,7 +34,7 @@ JavaScript Uses Lexiographic System to Compare to String.
 -------------------
 || Lexical Order ||
 -------------------
-A,B,C,..,X, Y, Z, a, b, c,..,X, Y, Z
+A,B,C,..,X, Y, Z, a, b, c,..,x, y, z
 1,2,3,..,24,25,26,27,28,29,..50,51,52
 
 
