@@ -1,83 +1,112 @@
-Chapter - 2
+Chapter - 7
 ==============
-## 6 ## Hello Word
+## 52 ## Object Literal vs Constructor
 
-Programming: Programming is a set of instruction which our computer can read, understand and produc and output.
-String: Anyting wrapped with quote is called String.
+There is no assosiative array in JavaScript. Object acts like assosiative array in JavaScript.
 
+Object Literal:
+> Code:
+var obj1 = {
+  name: 'Shahbaj',
+  roll: 1001,
+  gpa: 3.5
+};
+obj1.gpa = 3.25;
+console.log(obj1);
 
-             String        +     Number =    String   ( is a Concatination )
-               |           |        |
-console.log ( "I'm "       +        21 );
-               |           |        |
-           Operent     Operator    Operent
+> Output:
+{ name: 'Shahbaj', roll: 1001, gpa: 3.25 }
 
+Object Constructor:
+> Code:
+var obj2 = new Object();
+obj2.name = "Shahbaj";
+obj2.roll = 1001;
+obj2.gpa = 3.25;
+console.log(obj2);
 
-## 7 ## Understanding Variable
-
-Variable: Variable is a container which can store data.
-
-var name = 'Nisarul Amin Niam';
-var age = 21;
-console.log( "My name is " +  name + " and I am " + age + " years old." );
-// Output: My name is Nisarul Amin Niam and I am 21 years old.
-
-
-## 8 ## Reserved words and Naming Convention
-
-Reserved words:
-We can not define variable with reserved words of JavaScript.
-
-The words are --
-abstract 	arguments 	await* 	boolean
-break 	byte 	case 	catch
-char 	class* 	const 	continue
-debugger 	default 	delete 	do
-double 	else 	enum* 	eval
-export* 	extends* 	false 	final
-finally 	float 	for 	function
-goto 	if 	implements 	import*
-in 	instanceof 	int 	interface
-let* 	long 	native 	new
-null 	package 	private 	protected
-public 	return 	short 	static
-super* 	switch 	synchronized 	this
-throw 	throws 	transient 	true
-try 	typeof 	var 	void
-volatile 	while 	with 	yield
-
-Naming Convention:
-  1.  camelCase (used in JS)
-  2.  PascalCase (used in JS)
-  3.  snake_case
-  4.  kebab-case
-
-JavaScript variables declared with a camelCase variable name
-var myFatherName = "Shamsul Alam"; // The name of the variable myFatherName is camelCased.
+> Output:
+{ name: 'Shahbaj', roll: 1001, gpa: 3.25 }
 
 
-## 9 ## DataTypes in JavaScript
 
-01. Primitive Types: ( Primitive types are defined by JavaScript )
-    i. Number // 10 | 4.3 | 8.12 
-    ii. String // "Hello Bangladesh" | 'I love Bangladesh.'
-    iii. Boolean // true | false
-    iv. undefined
+## 53, 54 ## Accesing and Updating Object Properties in Javascript
+> Code:
+var point = {
+  x: 10,
+  y: 20,
+  z: 30,
+};
 
-02. Object Types / Structural Types: ( Object types are User Defined Data Type. Which stractures using Primitive Data types. )
-    i. Array
-    ii. Object
-    iii. Function
-    iv. null
+// #### Dot Notation ####
+point.x = 12; // Assignment(Updating) of the value of property 'x' from 'point' object
+console.log(point.x); // Printing the value of property 'x' from 'point' object
+console.log(point.x + point.y); // Doing Arithmetic Operation
+
+// #### Array Notation ####
+console.log(point["z"]); // Printing
+
+var letter = "y";
+console.log(point[letter]); // Printing
+
+point["x"] = 77; // Assignment(Updating) with Array Notation Method
+console.log(point["x"]); // Printing
+
+> Output:
+12
+32
+30
+20
+77
 
 
-## 10 ## Basic numbers in JavaScript
+## 55 ## Remove Object Properties in Javascript
+> Code:
+var point = {
+  x: 10,
+  y: 20,
+  z: 30,
+};
+delete point.x;
+console.log(point);
 
-console.log( 1 / 0 );
-output: Infinity
+> Output:
+{ y: 20, z: 30 }
 
-console.log( 'abc' * 10 );
-output: NaN                  // Means `Not a Number`.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 40 ## How to Compare Two String
+
+
+JavaScript Uses Lexiographic System to Compare to String.
+
+
+-------------------
+|| Lexical Order ||
+-------------------
+A,B,C,..,X, Y, Z, a, b, c,..,x, y, z
+1,2,3,..,24,25,26,27,28,29,..50,51,52
+
+
+
+
 
 ## 10, 11, 12, 13, 14 ##
 
@@ -147,28 +176,7 @@ console.log(typeof money);
 > Output:
 number
 
-****** undefined vs null ***************************
-Undefined: A variable without value always store undefined. The type is undefined of Undefined.
-
-Null: A varable with unknown value can store Null. Null is a special type used as a absence of an Object. The type is object of Null.
-
-Null and Undefined are equal(==) but they are not identical (===) [n.b. That means their types are not the same]
-
-
-code ->
-var abc;
-var xyz = null;
-console.log(abc);
-console.log(typeof abc);
-console.log(xyz);
-console.log(typeof xyz);
-
-output ->
-undefined
-undefined
-null
-object
-
+****** null vs undefined ******
 
 
 ****** Falsy Values in JavaScript ******
@@ -182,9 +190,9 @@ object
 ## 15 ## Octal and Hexadecimel Number System
 
 code ->
-var hex = 0xff;  // hexadecimel starts from 0x || structure = 0x + hex-number || Ex: 0xb decimel=> 11
+var hex = 0xff;
 console.log(hex);
-var oct = 0756; // Octal starts by 0 || stucture = 0 + oct-number || Ex: 011 decimel=> 9
+var oct = 0756;
 console.log(oct);
 
 output ->
