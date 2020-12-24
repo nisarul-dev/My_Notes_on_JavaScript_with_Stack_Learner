@@ -60,6 +60,36 @@ console.log(point["x"]); // Printing
 77
 
 
+
+## 56 ## How to Compare Two Objects in Javascript
+Wrong Method of comparing two objects :-
+> Code:
+> Output:
+
+Less Right way of comparing two objects :-
+> Code:
+> Output:
+
+The Right Method of comparing two objects :-
+> Code:
+> Output:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 55 ## Remove Object Properties in Javascript
 > Code:
 var point = {
@@ -72,6 +102,15 @@ console.log(point);
 
 > Output:
 { y: 20, z: 30 }
+
+
+
+
+
+
+
+
+
 
 
 
