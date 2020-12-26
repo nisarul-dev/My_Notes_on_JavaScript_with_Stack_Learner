@@ -2,7 +2,6 @@ Chapter - 5
 ==============
 ## 38 ## String Literal vs Constructor
 
-
 String Literal:
 var str = 'Something';
 
@@ -11,31 +10,63 @@ var str = String('Something');
 
 We can use constuctor to "TypeCast":
 > Code:
-var num = 120;
-console.log(typeOf num);
-var num = String(num); // here we could have used var num = num.toString();
-console.log(typeOf num);
+  var num = 120;
+  console.log(typeOf num);
+  var num = String(num); // here we could have used var num = num.toString();
+  console.log(typeOf num);
 
 > Output:
-Number
-String
+  Number
+  String
 
 
+## 39 ## What is Escape Notation
+> Code:
+  console.log("This is a 'String' and \"String\"");
+  console.log("This is a \tTab");
+  console.log("Using backslash '\\'");
+  console.log("It's a \nnew line");
 
-## 39 ## Hello Word
+> Output:
+  This is a 'String' and "String"
+  This is a       Tab
+  Using backslash '\'
+  It's a
+  new line
 
 
 ## 40 ## How to Compare Two String
-
-
 JavaScript Uses Lexiographic System to Compare to String.
-
-
 -------------------
 || Lexical Order ||
 -------------------
 A,B,C,..,X, Y, Z, a, b, c,..,x, y, z
 1,2,3,..,24,25,26,27,28,29,..50,51,52
+
+
+## 41 ## String Methods Provided by JavaScript
+
+//**** Concat Mathod ****
+var a = 'I am';
+var b = 'NA Naim';
+
+var c = a.concat(' ', b); 
+console.log(c); // I am NA Naim
+
+//**** substr() Method extracts parts of a string ****
+var d = b.substr( 3, 2 );
+                  |   |
+               Start, length
+console.log(d); // Na
+
+//**** charAt() Method ****
+console.log(b.charAt(5)); // i
+
+
+
+
+
+
 
 
 
