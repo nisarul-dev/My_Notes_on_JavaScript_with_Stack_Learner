@@ -2,8 +2,9 @@ Chapter - 2
 ==============
 ## 6 ## Hello Word
 
-Programming: Programming is a set of instruction which our computer can read, understand and produc and output.
-String: Anyting wrapped with quote is called String.
+Programming: Programming is a set of instruction which our computer can read, understand and produce and output.
+String: 
++
 
 
              String        +     Number =    String   ( is a Concatination )
@@ -150,7 +151,7 @@ number
 ****** undefined vs null ***************************
 Undefined: A variable without value always store undefined. The type is undefined of Undefined.
 
-Null: A varable with unknown value can store Null. Null is a special type used as a absence of an Object. The type is object of Null.
+Null: A varable with unknown value can store Null. Null is a special type used as a absence of an Object. The type of Null is object.
 
 Null and Undefined are equal(==) but they are not identical (===) [n.b. That means their types are not the same]
 
