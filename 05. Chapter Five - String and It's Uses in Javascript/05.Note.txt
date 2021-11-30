@@ -62,6 +62,16 @@ console.log(d); // Na
 //**** charAt() Method ****
 console.log(b.charAt(5)); // i
 
+//**** Some Other String Method ****
+console.log( c.startsWith('I am') );  // True
+console.log( c.endsWith('Naim777') ); // False
+console.log( a.toUpperCase() ); // I AM
+console.log( b.toLowerCase() ); // na naim
+console.log( '     Hello     '.trim ); // Hello
+console.log( c.spit(' ') ); // [ 'I', 'am', 'NA', 'Naim' ]
+
+
+
 
 
 
